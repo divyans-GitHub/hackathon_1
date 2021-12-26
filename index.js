@@ -2,10 +2,19 @@ const express = require('express');
 const port = 4300;
 
 const app = express();
+app.set('view engine' , 'ejs');
+app.use('/' , require('./routes') );
+app.use(express.urlencoded());
+app.use( express.static('assets'));
 
-app.get('/' , function(req , res){
-  res.send("<h1>Cool , it is running</h1");
-});
+
+
+
+
+
+
+
+
 
 app.listen(port , function(err){
     if(err){console.log('error in running server' , err);}
