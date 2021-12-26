@@ -1,0 +1,20 @@
+.container{
+    height:200px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: lightgrey;
+}
+
+.top{
+    height:50%;
+    border-bottom: 1px solid red;
+}
+.top .name, .bottom .bottom-left{
+    float: left;
+    font-family: serif;
+}
+.top .status , .bottom .code{
+    float: right;
+}
